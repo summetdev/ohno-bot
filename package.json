@@ -1,0 +1,23 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Andrey Antsiferov <a.dev.inbox@mail.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.1.1",
+    "ffmpeg-static": "^4.2.1",
+    "mongoose": "^5.9.9",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^2.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
