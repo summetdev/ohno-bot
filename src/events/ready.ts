@@ -6,5 +6,5 @@ import Logger from "../utils/logger";
  */
 export default new Event('ready', (client) => {
     const { username, discriminator } = client.user;
-    Logger.info(`> Bot is logged in as "${username}#${discriminator}"`);
+    Logger.info(`Bot is logged in as "${username}#${discriminator}"`);
 });

@@ -10,7 +10,7 @@ export default class Logger {
      * @param text - Text to be logged.
      */
     private static log(text: string): void {
-        console.log(`${text}${colors.reset}`)
+        console.log(`> ${text}${colors.reset}`);
     }
 
     /**
