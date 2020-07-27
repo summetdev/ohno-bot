@@ -1,23 +1,26 @@
 {
-  "name": "discord-bot",
-  "version": "1.0.0",
-  "description": "Discord bot",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
-  },
-  "author": "Andrey Antsiferov <a.dev.inbox@mail.ru>",
-  "license": "ISC",
-  "dependencies": {
-    "@discordjs/opus": "^0.3.2",
-    "discord.js": "^12.1.1",
-    "ffmpeg-static": "^4.2.1",
-    "mongoose": "^5.9.9",
-    "opusscript": "0.0.7",
-    "ytdl-core": "^2.1.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  }
+    "name": "ohno-bot",
+    "version": "1.0.0",
+    "description": "A Discord bot written in TypeScript, built on Discord.js.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "bot": "node dist/index.js",
+        "start": "npm run build && npm run bot",
+        "lint": "eslint --ext .ts src"
+    },
+    "author": "Antsiferov Andrew <summet.dev@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^12.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.14",
+        "@types/ws": "^7.2.6",
+        "@typescript-eslint/eslint-plugin": "^3.7.0",
+        "@typescript-eslint/parser": "^3.7.0",
+        "eslint": "^7.5.0",
+        "eslint-plugin-import": "^2.22.0",
+        "typescript": "^3.9.6"
+    }
 }
