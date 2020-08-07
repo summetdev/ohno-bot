@@ -20,4 +20,12 @@ export default class Logger {
     public static info(text: string): void {
         this.log(`${colors.font.blue}${text}`);
     }
+
+    /**
+     * Log a message with red color.
+     * @param text - Text to be logged.
+     */
+    public static error(text: string): void {
+        this.log(`${colors.font.red}${text}`);
+    }
 }

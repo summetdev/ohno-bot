@@ -2,7 +2,12 @@ import { Client } from 'discord.js';
 import { CommandsHandler } from './core/commands';
 import { EventsHandler } from './core/events';
 import { token } from './constants';
+import errorHandler from './utils/errorHandler';
 import path from "path";
+
+/** Handle all non handled errors. */
+process.on('unhandledRejection', errorHandler);
+process.on('uncaughtException', errorHandler);
 
 const client: Client = new Client();
 
